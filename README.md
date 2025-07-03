@@ -1,4 +1,4 @@
-#Jellyfin media server + SMB file server on RaspberryPi over Meshnet
+##Jellyfin media server + SMB file server on RaspberryPi over Meshnet
 
 ## Environment
 - **Device**: Raspberry Pi 5
@@ -9,14 +9,6 @@
 - **File share**: SMB (Samba)
 
 ---
-
-##  Meshnet Setup
-
-```bash
-nordvpn login
-nordvpn meshnet enable
-```
-first need to install nordvpn and signup then login with the account and enable meshnet no need to subscribe meshnet is completly free of cost.
 
 ## SMB Configuration
 
@@ -69,7 +61,13 @@ Fix - forget to mount /mnt/drive with sudo mount -a
       gave recursive permission to mounted drive
 
 
-##Meshnet config 
+##  Meshnet Setup
+
+```bash
+nordvpn login
+nordvpn meshnet enable
+```
+first need to install nordvpn and signup then login with the account and enable meshnet no need to subscribe meshnet is completly free of cost.
 
 ### 🌐 What is Meshnet?
 NordVPN's Meshnet is a private encrypted network that lets you connect your devices directly—bypassing the public internet. It works like a virtual LAN (Local Area Network), allowing secure access to devices anywhere in the world as if they were on the same local network.
