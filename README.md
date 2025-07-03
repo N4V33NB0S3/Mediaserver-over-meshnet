@@ -1,5 +1,16 @@
 # Jellyfin media server + SMB file server on RaspberryPi over Meshnet
 
+<p align="center">
+   <a href="https://nordvpn.com/">
+    <img src="https://press.nordvpn.com/wp-content/themes/nordvpn/dist/images/logo.svg" alt="NordVPN" width="150">
+  </a>
+  &nbsp;&nbsp;
+  <a href="https://www.raspberrypi.org/">
+    <img src="https://www.raspberrypi.org/app/uploads/2018/03/raspberry-pi-logo.png" alt="Raspberry Pi" width="100">
+  </a>
+   <img src="https://img.shields.io/badge/License-MIT-green" alt="License">
+</p>
+---
 ## 📌 Environment
 - **Device**: Raspberry Pi 5
 - **OS**: "Debian GNU/Linux 12 (bookworm)"
@@ -102,4 +113,4 @@ nordvpn settings
 - both the raspberry and tab or laptop need to be connected on same nordvpn account and meshnet enabled (different account also work but need some setup from invite send and recieve)
 
 ## Tip 
-- By using 
+- By using CX file explorer we can access smb share in android 
