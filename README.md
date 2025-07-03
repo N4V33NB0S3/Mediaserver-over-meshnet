@@ -6,7 +6,7 @@
 <img src="https://img.shields.io/badge/License-MIT-green" alt="License">
 </p>
 
----
+--
 
 ## 📌 Environment
 - **Device**: Raspberry Pi 5
