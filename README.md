@@ -52,26 +52,27 @@ sudo systemctl enable jellyfin
 
 ## Failures 
 
-- ***Problems*** - ❌ Jellyfin not detecting HDD 
-                 - ❌ After detected site cant be reached error in browser.
-	         - ❌ in smb share access denied.
+- ***Problems***
+  - ❌ Jellyfin not detecting HDD 
+  - ❌ After detected site cant be reached error in browser.
+  - ❌ in smb share access denied.
 
-- ***Fix*** - ✅ Make sure to mount /mnt/drive with sudo mount -a 
-            - ✅ Allow port number for jellyfin in firewall(ufw) default port is 8096 we can change it if we want
-            - ✅ Give recursive permission to mounted drive
+- ***Fix***
+  - ✅ Make sure to mount /mnt/drive with sudo mount -a 
+  - ✅ Allow port number for jellyfin in firewall(ufw) default port is 8096 we can change it if we want
+  - ✅ Give recursive permission to mounted drive
 
 
 ##  ⚙️ Meshnet Setup
+
+
+first need to install nordvpn and signup then login with the account and enable meshnet no need to subscribe meshnet is completly free of cost.
 
 ```bash
 nordvpn login
 nordvpn meshnet enable
 nordvpn meshnet peer list | grep "This device" -A 2  #it will show the raspberrypi's meshnet IP
 ```
-
-
- 
-first need to install nordvpn and signup then login with the account and enable meshnet no need to subscribe meshnet is completly free of cost.
 
 ### 🔐 What is Meshnet?
 NordVPN's Meshnet is a private encrypted network that lets you connect your devices directly—bypassing the public internet. It works like a virtual LAN (Local Area Network), allowing secure access to devices anywhere in the world as if they were on the same local network.
