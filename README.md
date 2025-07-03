@@ -96,8 +96,8 @@ nordvpn meshnet peer list | grep "This device" -A 2  #it will show the raspberry
 - **Screenshot**:
   
 <div align="center">
-  <img src="screenshots/nordpeer.jpg" alt="peer list" width="400">
-  <img src="screenshots/nordvpnsettings.jpg" alt="settings" width="400">
+  <img src="screenshots/peerlist.jpg" alt="peer list" width="400">
+  <img src="screenshots/nordsettings.jpg" alt="settings" width="400">
 </div>
 
 ### 🔐 What is Meshnet?
