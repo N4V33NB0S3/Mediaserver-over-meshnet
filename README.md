@@ -12,6 +12,11 @@
 
 ## 🔧 SMB Configuration
 
+```
+sudo smbpasswd -a username
+#it will prompt to setting up new password
+```
+
 ```bash
 sudo mkdir /mnt/drive
 sudo blkid #Find UUID
@@ -23,6 +28,7 @@ To do smb configurations perfectly first need to find the UUID of the external H
 UUID=XXXX-XXXX  /mnt/drive ntfs defaults, uid=1000, gid=1000 0 0
 ```
 
+sudo 
 ### 🔧 Samba config(/etc/samba/smb.conf):
 ```
 comment = Raspberry Pi Media Share
@@ -78,11 +84,11 @@ nordvpn meshnet peer list | grep "This device" -A 2  #it will show the raspberry
 NordVPN's Meshnet is a private encrypted network that lets you connect your devices directly—bypassing the public internet. It works like a virtual LAN (Local Area Network), allowing secure access to devices anywhere in the world as if they were on the same local network.
 
 ### 🔑 Key Features
-✔ Device Linking – Connect up to 60 devices (10 per NordVPN account + 50 external invites)
-✔ Encrypted Traffic – All data is secured with NordVPN’s encryption
-✔ No Internet Required – Works even if the VPN is off
-✔ Static IPs – Each device gets a fixed 100.x.x.x IP (no dynamic changes)
-✔ Cross-Platform – Works on Windows, macOS, Linux, Android, and iOS
+- ✔ Device Linking – Connect up to 60 devices (10 per NordVPN account + 50 external invites)
+- ✔ Encrypted Traffic – All data is secured with NordVPN’s encryption
+- ✔ No Internet Required – Works even if the VPN is off
+- ✔ Static IPs – Each device gets a fixed 100.x.x.x IP (no dynamic changes)
+- ✔ Cross-Platform – Works on Windows, macOS, Linux, Android, and iOS
 
 ```
 nordvpn set meshnet on/off
@@ -96,4 +102,5 @@ nordvpn settings
 
 - both the raspberry and tab or laptop need to be connected on same nordvpn account and meshnet enabled (different account also work but need some setup from invite send and recieve)
 
-
+## Tip 
+- By using 
