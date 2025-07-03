@@ -13,8 +13,8 @@
 ## 🔧 SMB Configuration
 
 ```
-sudo smbpasswd -a username
-#it will prompt to setting up new password
+sudo smbpasswd -a username #it will prompt to setting up new password
+
 ```
 
 ```bash
@@ -28,7 +28,6 @@ To do smb configurations perfectly first need to find the UUID of the external H
 UUID=XXXX-XXXX  /mnt/drive ntfs defaults, uid=1000, gid=1000 0 0
 ```
 
-sudo 
 ### 🔧 Samba config(/etc/samba/smb.conf):
 ```
 comment = Raspberry Pi Media Share
