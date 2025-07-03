@@ -7,7 +7,9 @@
 <a href="https://www.raspberrypi.org/">
   <img src="https://img.shields.io/badge/Raspberry%20Pi-A22846?style=for-the-badge&logo=Raspberry%20Pi&logoColor=white" alt="Raspberry Pi">
 </a>
+<a>
    <img src="https://img.shields.io/badge/License-MIT-green" alt="License">
+</a>
 </p>
 
 ---
@@ -115,3 +117,9 @@ nordvpn settings
 
 ## Tip 
 - By using CX file explorer we can access smb share in android 
+
+## 📜 License
+**MIT © [Naveen Bose]**
+<p align="left">
+<img src="https://img.shields.io/badge/License-MIT-green" alt="License">
+</p>
