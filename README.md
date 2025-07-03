@@ -1,6 +1,6 @@
 # Jellyfin media server + SMB file server on RaspberryPi over Meshnet
 
-## Environment
+## 📌 Environment
 - **Device**: Raspberry Pi 5
 - **OS**: "Debian GNU/Linux 12 (bookworm)"
 - **VPN**: Nord VPN Meshnet
@@ -10,7 +10,7 @@
 
 ---
 
-## SMB Configuration
+## 🔧 SMB Configuration
 
 ```bash
 sudo mkdir /mnt/drive
@@ -23,7 +23,7 @@ To do smb configurations perfectly first need to find the UUID of the external H
 UUID=XXXX-XXXX  /mnt/drive ntfs defaults, uid=1000, gid=1000 0 0
 ```
 
-### Samba config(/etc/samba/smb.conf):
+### 🔧 Samba config(/etc/samba/smb.conf):
 ```
 comment = Raspberry Pi Media Share
    path = /mnt/mediadrive
@@ -40,7 +40,7 @@ comment = Raspberry Pi Media Share
 **issues**: permission issues are usually we can mitigate this with setting up with proper permission recursively for the drive.
 **Fix**: chown -R username:username /mnt/drive
 
-## Jellyfin Setup
+## 🔧 Jellyfin Setup
 
 ```
 sudo apt update
@@ -50,26 +50,30 @@ sudo systemctl enable jellyfin
 
 **Screenshot**:
 
-##Failures 
+## Failures 
 
-Problems - 1.Jellyfin not detecting HDD 
-           2.After detected site cant be reached error in browser.
-	   3.in smb share access denied.
+***Problems*** - 1.Jellyfin not detecting HDD 
+                 2.After detected site cant be reached error in browser.
+	         3.in smb share access denied.
 
-Fix - forget to mount /mnt/drive with sudo mount -a
-      allow port number for jellyfin in firewall(ufw) default port is 8096 we can change it if we want
-      gave recursive permission to mounted drive
+***Fix*** - forget to mount /mnt/drive with sudo mount -a
+            allow port number for jellyfin in firewall(ufw) default port is 8096 we can change it if we want
+            gave recursive permission to mounted drive
 
 
-##  Meshnet Setup
+##  ⚙️ Meshnet Setup
 
 ```bash
 nordvpn login
 nordvpn meshnet enable
+nordvpn meshnet peer list | grep "This device" -A 2  #it will show the raspberrypi's meshnet IP
 ```
+
+
+ 
 first need to install nordvpn and signup then login with the account and enable meshnet no need to subscribe meshnet is completly free of cost.
 
-### 🌐 What is Meshnet?
+### 🔐 What is Meshnet?
 NordVPN's Meshnet is a private encrypted network that lets you connect your devices directly—bypassing the public internet. It works like a virtual LAN (Local Area Network), allowing secure access to devices anywhere in the world as if they were on the same local network.
 
 ### 🔑 Key Features
