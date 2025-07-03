@@ -93,6 +93,13 @@ nordvpn meshnet enable
 nordvpn meshnet peer list | grep "This device" -A 2  #it will show the raspberrypi's meshnet IP
 ```
 
+- **Screenshot**:
+  
+<div align="center">
+  <img src="screenshots/nordpeer.jpg" alt="peer list" width="800">
+  <img src="screenshots/nordvpnsettings.jpg" alt="settings" width="800">
+</div>
+
 ### 🔐 What is Meshnet?
 NordVPN's Meshnet is a private encrypted network that lets you connect your devices directly—bypassing the public internet. It works like a virtual LAN (Local Area Network), allowing secure access to devices anywhere in the world as if they were on the same local network.
 
