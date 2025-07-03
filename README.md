@@ -1,4 +1,4 @@
-##Jellyfin media server + SMB file server on RaspberryPi over Meshnet
+# Jellyfin media server + SMB file server on RaspberryPi over Meshnet
 
 ## Environment
 - **Device**: Raspberry Pi 5
