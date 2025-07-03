@@ -66,7 +66,7 @@ sudo systemctl enable jellyfin
 - **Screenshot**:
   
 <div align="center">
-  <img src="screenshots/jellyfin.jpg" alt="Active jellyfin" width="1000">
+  <img src="screenshots/jellyfin.jpg" alt="Active jellyfin" width="800">
 </div>
 
 ## Failures 
