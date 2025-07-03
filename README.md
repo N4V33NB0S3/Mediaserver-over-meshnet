@@ -37,8 +37,8 @@ comment = Raspberry Pi Media Share
    force user = [mention user main user here]
 ```
 
-**issues**: permission issues are usually we can mitigate this with setting up with proper permission recursively for the drive.
-**Fix**: chown -R username:username /mnt/drive
+- **issues**: permission issues are usual however we can mitigate this with setting up with proper permission recursively for the drive.
+- **Fix**: chown -R username:username /mnt/drive
 
 ## 🔧 Jellyfin Setup
 
@@ -48,17 +48,17 @@ sudo apt install jellyfin -y
 sudo systemctl enable jellyfin
 ```
 
-**Screenshot**:
+- **Screenshot**:
 
 ## Failures 
 
-***Problems*** - 1.Jellyfin not detecting HDD 
-                 2.After detected site cant be reached error in browser.
-	         3.in smb share access denied.
+- ***Problems*** - ❌ Jellyfin not detecting HDD 
+                 - ❌ After detected site cant be reached error in browser.
+	         - ❌ in smb share access denied.
 
-***Fix*** - forget to mount /mnt/drive with sudo mount -a
-            allow port number for jellyfin in firewall(ufw) default port is 8096 we can change it if we want
-            gave recursive permission to mounted drive
+- ***Fix*** - ✅ Make sure to mount /mnt/drive with sudo mount -a 
+            - ✅ Allow port number for jellyfin in firewall(ufw) default port is 8096 we can change it if we want
+            - ✅ Give recursive permission to mounted drive
 
 
 ##  ⚙️ Meshnet Setup
@@ -91,8 +91,8 @@ nordvpn status
 nordvpn settings
 ```
 
-***issues***: sometime while enabling meshnet and accidentally connect VPN with anylocation meshnet don't work also after disconnect nordlynx public address for meshnet will override the dns, However after troubleshooting longtime i found out this so i wrote seperate script for dns fix.
+- ***issues***: sometime while enabling meshnet and accidentally connect VPN with anylocation meshnet don't work also after disconnect nordlynx public address for meshnet will override the dns, However after troubleshooting longtime i found out this so i wrote seperate script for dns fix.
 
-both the raspberry and tab or laptop need to be connected on same nordvpn account and meshnet enabled (different account also work but need some setup from invite send and recieve)
+- both the raspberry and tab or laptop need to be connected on same nordvpn account and meshnet enabled (different account also work but need some setup from invite send and recieve)
 
 
