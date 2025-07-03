@@ -1,15 +1,8 @@
 # Jellyfin media server + SMB file server on RaspberryPi over Meshnet
 
 <p align="center">
- <a href="https://nordvpn.com/">
-  <img src="https://img.shields.io/badge/NordVPN-4F81C7?style=for-the-badge&logo=nordvpn&logoColor=white" alt="NordVPN">
-</a>
-<a href="https://www.raspberrypi.org/">
-  <img src="https://img.shields.io/badge/Raspberry%20Pi-A22846?style=for-the-badge&logo=Raspberry%20Pi&logoColor=white" alt="Raspberry Pi">
-</a>
-<a>
-   <img src="https://img.shields.io/badge/License-MIT-green" alt="License">
-</a>
+<img src="https://img.shields.io/badge/-NordVPN-4F81C7?logo=nordvpn" alt="NordVPN">
+<img src="https://img.shields.io/badge/-Raspberry%20Pi-A22846?logo=raspberrypi" alt="Raspberry Pi">
 </p>
 
 ---
