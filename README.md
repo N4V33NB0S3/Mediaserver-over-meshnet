@@ -1,4 +1,4 @@
-# Jellyfin media server + SMB file server on RaspberryPi over Meshnet
+# Jellyfin media server + SMB file server(Private cloud) on RaspberryPi over Meshnet
 <p>
 <a href="https://nordvpn.com/" target="_blank">
   <img src="https://img.shields.io/badge/-NordVPN-white?logo=nordvpn&logoColor=4F81C7" alt="NordVPN">
